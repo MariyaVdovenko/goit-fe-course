@@ -75,7 +75,7 @@ ul{
     margin-right: 0;
 }
 .row:nth-last-child(-n + 2) {
-     margin-bottom: 50px;
+     margin-bottom: 0px;
 }
 
 .photo-story{
@@ -112,5 +112,18 @@ ul{
     outline: 1px solid #2e2d2d;
     color: #626262;
     border: 0;
-    margin: 0 auto;
+    margin: 50px auto 0;
 }
+
+.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+ }
