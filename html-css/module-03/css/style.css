@@ -1,12 +1,30 @@
+html {
+    box-sizing: border-box;
+}
+    
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+} 
+
 .wrapper {
     background: #fff;
-    height: 100vh;
     width: 900px;
     padding-top: 30px;
+    padding-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
     margin: auto;
-    font-size: 0;
+    
+}
+
+.head {
+    margin-bottom: 89px;
+}
+
+.head-menu {
+    text-align: center;
 }
 
 ul{
@@ -14,22 +32,14 @@ ul{
     padding-left: 0;
 }
 
+.menu{
+    font-size: 0;
+}
+
 .menu-item{
-    width: 100px;
-    height: 40px;
-    line-height: 40px;
-    background: white;
-    margin: 0 72px 89px 0;
     font-size:14px;
     display: inline-block;
     text-align: center;
-    
-}
-.menu-item-first {
-    margin-left: 142px;
-}
-.menu-item-last {
-    margin-right: 0;
 }
 
 .menu-link {
@@ -38,6 +48,7 @@ ul{
     box-shadow: 0px 0px 0px 0px hsla(0, 0%, 0%, .2);
     text-decoration: none;
     cursor: pointer;
+    padding: 20px 40px;
 
 }
 
@@ -48,27 +59,47 @@ ul{
 .menu-link:active {
     color: #03a9f4;
 }
+.rows{
+    font-size: 0;
+}
 
 .row{
     width: 420px;
-    height: 485px;
-    /* line-height: 485px; */
-    background: white;
-    margin: 0px 30px 34px 0;
     font-size:14px;
     display: inline-block;
     text-align: left;
+    margin-right: 60px;
+    margin-bottom: 130px;
+}
+.row:nth-child(2n) {
+    margin-right: 0;
+}
+.row:nth-last-child(-n + 2) {
+     margin-bottom: 50px;
 }
 
-.row2{
-    width: 420px;
-    height: 485px;
-    /* line-height: 485px; */
-    background: white;
-    margin: 0px 0px 34px 30px;
-    font-size:14px;
-    display: inline-block;
-    text-align: left;
+.photo-story{
+    margin-bottom: 22px;
+}
+.photo-title{
+    color: #b4ad9e;
+    font-size:15px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 26px;
+}
+
+.name-story{
+    font-size:30px;
+    color: #626262;
+    margin: 0;
+    margin-bottom: 34px;
+}
+
+.txt-story{
+    font-size: 14px;
+    color: #626262;
+    margin: 0;
 }
 
 .btn-bottom{
@@ -76,27 +107,10 @@ ul{
     height: 60px;
     line-height: 60px;
     background: white;
-    margin-left: 368px;
     font-size:20px;
-    display: inline-block;
-    text-align: center;
+    display: block;
     outline: 1px solid #2e2d2d;
-    margin-top: 24px;
     color: #626262;
-}
-
-.photo-title{
-    color: #b4ad9e;
-    font-size:15px;
-    text-transform: uppercase;
-}
-
-.name-story{
-    font-size:30px;
-    color: #626262;
-}
-
-.txt-story{
-    font-size: 14px;
-    color: #626262;
+    border: 0;
+    margin: 0 auto;
 }
