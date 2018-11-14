@@ -184,8 +184,7 @@ height: auto;
 }
 
 .btn-read {
-    width: 160px;
-    height: 51px;
+    padding: 12px 39px;
     background: #4ec6ab;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
