@@ -1,3 +1,13 @@
+html{
+box-sizing:border-box;
+}
+
+*,
+*::before,
+*::after{
+box-sizing: inherit;
+}
+
 .wrapper {
     width: 1110px;
     padding-top: 35px;
@@ -11,7 +21,9 @@
 .logo {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
+    color: #000;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .hd {
@@ -23,22 +35,35 @@
     font-weight: 700;
 }
 
+.logo:hover::first-letter {
+    color: #75f1d9;
+}
+
 .logo {
     float: left;
 }
 
+.menu {
+    float: right;
+}
+
 .menu li{
-float: right;
-padding-left: 30px;
+float: left;
+margin-left: 30px;
 }
 
 .menu a {
+    display: block;
     text-decoration: none;
     color: #000;
 }
 
 .menu a:focus {
     color: #1abc9c
+}
+
+.menu a:hover {
+    color: #75f1d9
 }
 
 .menu {
@@ -55,7 +80,7 @@ padding-left: 30px;
     font-size: 48px;
     font-weight: 900;
     text-transform: uppercase;
-    margin: 104px auto 0;
+    margin: 0 auto 96px;
     text-align: center;
 }
 
@@ -65,13 +90,14 @@ padding-left: 30px;
     width: 164px;
     height: 7px;
     background: #4ec6ab;
-    margin: 33px auto 93px;
+    margin: 33px auto 0;
 }
 
 .items {
     list-style-type: none;
     font-size: 0;
     padding: 0;
+    margin: 0 auto 106px; 
 }
 
 .items-product {
@@ -142,6 +168,7 @@ height: auto;
     list-style-type: none;
     font-size: 0;
     padding: 0;
+    margin: 0 auto;
 }
 
 .li-news {
@@ -158,6 +185,7 @@ height: auto;
 .news-photo {
     width: 350px;
     height: 262px;
+    margin-bottom: 20px;
 }
 
 .news-title {
@@ -165,6 +193,7 @@ height: auto;
     font-weight: 600;
     font-size: 18px;
     color: #555252;
+    margin-bottom: 50px;
 }
 
 .news-title::after {
@@ -173,7 +202,7 @@ height: auto;
     width: 136px;
     height: 3px;
     background: #4ec6ab;
-    margin: 17px 0 30px;
+    margin: 17px 0;
 }
 
 .news-text {
@@ -181,6 +210,7 @@ height: auto;
     font-weight: 400;
     font-size: 14px;
     color: #555252;
+    padding-bottom: 20px;
 }
 
 .btn-read {
@@ -191,9 +221,9 @@ height: auto;
     font-size: 16px;
     color: #fff;
     border-radius: 6px;
-
+    text-decoration: none;
 }
 
 .btn-read:hover {
-    background: #38917d;
+    background: #75f1d9;
 }
