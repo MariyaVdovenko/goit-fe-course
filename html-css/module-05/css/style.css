@@ -201,9 +201,10 @@ position: relative;
 float: left;
 }
 
-.items-featured:hover .dbox{
+.items-featured:hover .dbox-ul{
     opacity: 0.949;
 }
+
 
 .dbox {
     width: 235px;
@@ -213,8 +214,16 @@ float: left;
     position: relative;
     left: 10px;
     top: 12px;
-    opacity: 0;
     text-decoration: none
+}
+
+.dbox-ul{
+    width: 235px;
+    height: 260px;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    opacity: 0;
 }
 
 .btn-50 {
@@ -222,42 +231,60 @@ float: left;
     height: 50px;
     position: absolute;
     top: 80px;
-    border: 5px;
+    background-color: #000;
 }
 
-.btn-166 {
+.btn-165 {
     width: 165px;
     height: 50px;
     position: absolute;
     top: 135px;
     left: 35px;
-    border: none;
-    background-image: url('../img/icons/icon-basket.png');
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #000;
 }
 
 .icon-heart-empty {
     left: 35px;
-    background-image: url('../img/icons/icon-heart.png');
-    background-repeat: no-repeat;
-    background-position: center;
+}
+
+.icon-shuffle:hover {
+    background: #4ec6ab;
+}
+
+.icon-shuffle:focus {
+    background: #7fd9c7;
+}
+.icon-heart-empty:hover {
+    background: #4ec6ab;
+}
+
+.icon-heart-empty:focus {
+    background: #7fd9c7;
+}
+.icon-clock:hover {
+    background: #4ec6ab;
+}
+
+.icon-clock:focus {
+    background: #7fd9c7;
+}
+.icon-basket:hover {
+    background: #4ec6ab;
+}
+
+.icon-basket:focus {
+    background: #7fd9c7;
 }
 
 .icon-shuffle {
     left: 50%;
     transform: translateX(-50%);
-    background-image: url('../img/icons/icon-shuffle.png');
-    background-repeat: no-repeat;
-    background-position: center;
-
+    
 }
 
 .icon-clock {
     right: 35px;
-    background-image: url('../img/icons/icon-clock.png');
-    background-repeat: no-repeat;
-    background-position: center;
+    
 }
 
 .items-li-featured {
