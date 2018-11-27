@@ -9,19 +9,12 @@ box-sizing: inherit;
 }
 
 
-.allpage{
-    width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    margin: auto;
-}
-
 .wrapper {
     width: 1140px;
-    padding-top: 35px;
+    padding: 35px 15px 0 15px;
+    margin: 0;
     margin-left: auto;
     margin-right: auto;
-    margin: auto;
     background: #fff;
 }
 
@@ -35,7 +28,7 @@ box-sizing: inherit;
 }
 
 .hd {
-    margin-bottom: 112px;
+    margin-bottom: 40px;
 }
 
 .logo::first-letter {
@@ -88,15 +81,40 @@ margin-left: 0;
     padding: 0;
 }
 
-.slide {
+.slider {
     width: 1600px;
     height: 600px;
-    margin: 0;
-    margin-left: -230px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
     position: relative;
 }
 
-.slides-img {
+.slider-pagination{
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%)
+
+}
+
+.slider-pagination-item {
+    display: inline-block;
+    width: 60px;
+    height: 5px;
+    background-color: #b0b8b9;
+}
+
+.slider-pagination-active {
+    background-color: #75f1d9;
+}
+
+.slides {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slider-img {
     height: 600px;
     width: 100%;
     object-fit: cover;
@@ -119,7 +137,7 @@ margin-left: 0;
     right: 245px;
 }
 
-.slide-all {
+.slide-ctrl {
     border: none;
     padding: 16px 37px;
     background: #1abc9c;
@@ -133,7 +151,7 @@ margin-left: 0;
     top: 235px;
 }
 
-.slide-all:hover {
+.slide-ctrl:hover {
     background: #75f1d9
 }
 
@@ -161,7 +179,6 @@ margin-left: 0;
 }
 
 .sec-title {
-    width: 500px;
     font-family: 'Roboto', sans-serif;
     font-size: 48px;
     font-weight: 900;
@@ -181,14 +198,14 @@ margin-left: 0;
 
 .items {
     list-style-type: none;
-    font-size: 0;
     padding: 0;
-    margin: 0 15px;
-    padding-bottom: 106px;
-
 }
 
 .newst {
+    width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
     background: #e9f0fd;
     padding-top: 102px;
 }
@@ -339,15 +356,14 @@ height: auto;
     text-align: center;
 }
 .copyr {
-    width: 1600px;
+    width: 1140px;
     height: 87px;
     background: #323232;
     color: #fff;
     text-align: center;
     line-height: 87px;
     display: block;
-    float: left;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .clearfix::after {
@@ -360,4 +376,17 @@ height: auto;
     
     color: #4ec6ab;
     text-decoration: none;
+}
+
+.span-heart-empty {
+    visibility: hidden;
+}
+.span-shuffle {
+    visibility: hidden;
+}
+.span-clock {
+    visibility: hidden;
+}
+.span-basket {
+    visibility: hidden;
 }
