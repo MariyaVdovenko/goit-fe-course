@@ -11,11 +11,16 @@ box-sizing: inherit;
 
 .wrapper {
     width: 1140px;
-    padding: 35px 15px 0 15px;
+    padding: 0 15px;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
-    background: #fff;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .logo {
@@ -29,6 +34,7 @@ box-sizing: inherit;
 
 .hd {
     margin-bottom: 40px;
+    background: #fff;
 }
 
 .logo::first-letter {
@@ -81,17 +87,27 @@ margin-left: 0;
     padding: 0;
 }
 
+.slider-bg {
+    background-image: url(../img/img-01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    position: relative;
+    
+    /* height: 600px;
+    width: 100%;
+    object-fit: cover; */
+}
+
 .slider {
-    width: 1600px;
     height: 600px;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
     margin: 0 auto;
     position: relative;
 }
 
 .slider-pagination{
     position: absolute;
-    bottom: -10px;
+    bottom: -3px;
     left: 50%;
     transform: translateX(-50%)
 
@@ -114,12 +130,7 @@ margin-left: 0;
     list-style: none;
 }
 
-.slider-img {
-    height: 600px;
-    width: 100%;
-    object-fit: cover;
-    float: left;
-}
+
 
 .dark {
     width: 1600px;
@@ -131,10 +142,10 @@ margin-left: 0;
 
 
 .slide-left {
-    left: 245px;
+    left: 0px;
 }
 .slide-right {
-    right: 245px;
+    right: 0px;
 }
 
 .slide-ctrl {
@@ -157,8 +168,10 @@ margin-left: 0;
 
 .txtup {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 18%;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 840px;
     font-family: 'roboto', sans-serif;
     text-transform: uppercase;
     color: #fff;
@@ -168,14 +181,13 @@ margin-left: 0;
 .tname {
     font-size: 60px;
     font-weight: 900;
-    padding-bottom: 30px;
-    top: 216px;
+    margin: 0;
 }
 
 .bname {
     font-size: 24px;
     font-weight: 300;
-    top: 301px;
+    margin: 0;
 }
 
 .sec-title {
@@ -199,23 +211,13 @@ margin-left: 0;
 .items {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 .newst {
-    width: 1140px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+    margin: 0;
     background: #e9f0fd;
     padding-top: 102px;
-}
-
-.items-product {
-width: 255px;
-height: 282px;
-background: #e9f0fd;
-position: relative;
-float: left;
 }
 
 .items-featured:hover .dbox-ul{
@@ -231,7 +233,7 @@ float: left;
     position: relative;
     left: 10px;
     top: 12px;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .dbox-ul{
@@ -307,7 +309,7 @@ float: left;
 .items-li-featured {
 width: 255px;
 float: left;
-margin: 0 30px 32px 0;
+margin: 0 30px 0;
 height: auto;
 }
 
