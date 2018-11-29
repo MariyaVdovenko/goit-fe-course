@@ -138,30 +138,33 @@ margin-left: 0;
     position: relative;
 }
 
-
-.slide-left {
-    left: 0px;
-}
-.slide-right {
-    right: 0px;
-}
-
 .slide-ctrl {
     border: none;
-    padding: 16px 37px;
+    width: 104px;
+    height: 104px;
     background: #1abc9c;
-    font-family: 'roboto', sans-serif;
-    font-size: 60px;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: #fff;
     display: inline-block;
     position: absolute;
     top: 235px;
 }
 
-.slide-ctrl:hover {
-    background: #75f1d9
+.slide-left:hover {
+    background: #4ec6ab;
+    background-image: url(../img/icons/arrow-left.png);
+}
+
+.slide-right:hover {
+    background: #4ec6ab;
+    background-image: url(../img/icons/arrow-right.png);
+}
+
+.slide-left {
+    left: 0px;
+    background-image: url(../img/icons/arrow-left.png);
+}
+.slide-right {
+    right: 0px;
+    background-image: url(../img/icons/arrow-right.png);
 }
 
 .txtup {
@@ -261,6 +264,8 @@ margin-left: 7px;
     height: 50px;
     border: 1px solid #fff;
     display: block;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .btn-165 {
@@ -273,44 +278,51 @@ margin-left: 7px;
 
 .icon-heart-empty {
     background-image: url(../img/icons/icon-heart.png);
+}
 
+
+.btn-all:hover {
+    background: rgb(26, 188, 156);
+    border: 1px solid rgb(26, 188, 156);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-all:focus {
+    background: rgb(157, 255, 237);
+    border: 1px solid rgb(157, 255, 237);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .icon-shuffle:hover {
-    background: linear-gradient( rgba(26, 188, 156, 0.5), rgba(188, 240, 229, 0.5) ), url(../img/icons/icon-shuffle.png);
-    border: none;
+    background-image: url(../img/icons/icon-shuffle.png);
 }
 
 .icon-shuffle:focus {
-    background: linear-gradient( rgba(157, 255, 237, 0.5), rgba(204, 255, 245, 0.5) ), url(../img/icons/icon-shuffle.png);;
-    border: none;
+    background-image: url(../img/icons/icon-shuffle.png);
 }
+
 .icon-heart-empty:hover {
-    background: linear-gradient( rgba(26, 188, 156, 0.6), rgba(127, 217, 199, 0.5) ), url(../img/icons/icon-heart.png);;
-    border: none;
+    background-image: url(../img/icons/icon-heart.png);
 }
 
 .icon-heart-empty:focus {
-    background: linear-gradient( rgba(157, 255, 237, 0.5), rgba(204, 255, 245, 0.5) ), url(../img/icons/icon-heart.png);;
-    border: none;
+    background-image: url(../img/icons/icon-heart.png);
 }
 .icon-clock:hover {
-    background: linear-gradient( rgba(26, 188, 156, 0.6), rgba(127, 217, 199, 0.5) ), url(../img/icons/icon-clock.png);;
-    border: none;
+    background-image: url(../img/icons/icon-clock.png);
 }
 
 .icon-clock:focus {
-    background: linear-gradient( rgba(157, 255, 237, 0.5), rgba(204, 255, 245, 0.5) ), url(../img/icons/icon-clock.png);;
-    border: none;
+    background-image: url(../img/icons/icon-clock.png);
 }
 .icon-basket:hover {
-    background: linear-gradient( rgba(26, 188, 156, 0.6), rgba(127, 217, 199, 0.5) ), url(../img/icons/icon-basket.png);
-    border: none;
+    background-image: url(../img/icons/icon-basket.png);
 }
 
 .icon-basket:focus {
-    background: linear-gradient( rgba(157, 255, 237, 0.5), rgba(204, 255, 245, 0.5) ), url(../img/icons/icon-basket.png);
-    border: none;
+    background-image: url(../img/icons/icon-basket.png);
 }
 
 .icon-shuffle {
@@ -396,6 +408,7 @@ footer {
 .link-autor {
     color: #4ec6ab;
     text-decoration: none;
+    display: block;
 }
 
 .visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
