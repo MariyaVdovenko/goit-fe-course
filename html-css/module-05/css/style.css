@@ -149,13 +149,11 @@ margin-left: 0;
 }
 
 .slide-left:hover {
-    background: #4ec6ab;
-    background-image: url(../img/icons/arrow-left.png);
+    background-color: #4ec6ab;
 }
 
 .slide-right:hover {
-    background: #4ec6ab;
-    background-image: url(../img/icons/arrow-right.png);
+    background-color: #4ec6ab;
 }
 
 .slide-left {
@@ -284,17 +282,13 @@ margin-left: 7px;
 
 
 .btn-all:hover {
-    background: rgb(26, 188, 156);
+    background-color: rgb(26, 188, 156);
     border: 1px solid rgb(26, 188, 156);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .btn-all:focus {
-    background: rgb(157, 255, 237);
+    background-color: rgb(157, 255, 237);
     border: 1px solid rgb(157, 255, 237);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .icon-shuffle {
