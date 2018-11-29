@@ -273,6 +273,8 @@ margin-left: 7px;
     height: 50px;
     display: block;
     border: 1px solid #fff;
+    background-repeat: no-repeat;
+    background-position: center;
     background-image: url(../img/icons/icon-basket.png);
 }
 
@@ -295,36 +297,6 @@ margin-left: 7px;
     background-position: center;
 }
 
-.icon-shuffle:hover {
-    background-image: url(../img/icons/icon-shuffle.png);
-}
-
-.icon-shuffle:focus {
-    background-image: url(../img/icons/icon-shuffle.png);
-}
-
-.icon-heart-empty:hover {
-    background-image: url(../img/icons/icon-heart.png);
-}
-
-.icon-heart-empty:focus {
-    background-image: url(../img/icons/icon-heart.png);
-}
-.icon-clock:hover {
-    background-image: url(../img/icons/icon-clock.png);
-}
-
-.icon-clock:focus {
-    background-image: url(../img/icons/icon-clock.png);
-}
-.icon-basket:hover {
-    background-image: url(../img/icons/icon-basket.png);
-}
-
-.icon-basket:focus {
-    background-image: url(../img/icons/icon-basket.png);
-}
-
 .icon-shuffle {
     background-image: url(../img/icons/icon-shuffle.png);
 }
@@ -332,6 +304,7 @@ margin-left: 7px;
 .icon-clock {
     background-image: url(../img/icons/icon-clock.png);
 }
+
 
 .items-li-featured {
 width: 255px;
@@ -408,7 +381,7 @@ footer {
 .link-autor {
     color: #4ec6ab;
     text-decoration: none;
-    display: block;
+    display: inline-block;
 }
 
 .visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
