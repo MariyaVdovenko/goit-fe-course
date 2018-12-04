@@ -380,6 +380,7 @@ img {
     color: #f9fdfc;
     padding: 15px 38px;
     transition: background-color 200ms linear;
+    border: none;
 }
 
 .btn:hover {
@@ -394,5 +395,6 @@ img {
     font-style: italic;
     font-size: 15pt;
     color: #999;
-    padding: 12px 12px 12px ;
+    padding: 13px 12px 13px;
+    border: 1px solid #999;
 }
