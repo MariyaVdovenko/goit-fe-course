@@ -245,7 +245,7 @@ img {
 /* overlay */
 .team-list-item {
     position: relative;
-    transition: transform 200ms linear;
+    
 }
 
 .overlay {
@@ -260,7 +260,12 @@ img {
     justify-content: center;
     align-items: center;
     transition: box-shadow 200ms linear,
-                opacity 200ms linear;
+                opacity 200ms linear,
+                
+}
+
+.overlay-sl {
+    transition: transform 200ms linear;
 }
 
 
@@ -306,15 +311,17 @@ img {
     background-image: url(../img/icons/instagram.png);
 }
 
-
 .team-list-item:hover .overlay {
-    opacity: 0.949;
+    opacity: 1;
     box-shadow: 11px 11px rgb(149,225,211);
+    
 }
 
-.team-list-item:hover {
+.team-list-item:hover .overlay-sl {
     transform: translate(-11px, -11px);
 }
+
+
 
 .who {
     padding-top: 100px;
@@ -323,7 +330,6 @@ img {
 
 .page-footer {
     min-height: 65px;
-    margin-bottom: 15px;
 }
 
 .page-footer .wrapper{
