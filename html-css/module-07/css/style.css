@@ -97,6 +97,7 @@ img {
     font-weight: 700;
     font-size: 17px;
     text-align: center;
+    margin: 0 auto 20px;
 }
 
 .discription-service {
@@ -105,10 +106,11 @@ img {
     font-size: 14px;
     text-align: center;
     max-width: 290px;
+    margin: 0;
 }
 
 .service-item {
-    padding: 0 20px;
+    flex: 0 0 290px;
 } 
 
 .service-item::before {
@@ -118,6 +120,7 @@ img {
     height: 74px;
     background-repeat: no-repeat;
     background-position: center;
+    margin-bottom: 30px;
 }
 
 .ecommerce::before {
@@ -167,12 +170,13 @@ img {
 .about-user {
     display: flex;
     flex-direction: column;
-    min-height: 218px;
-    justify-content: space-between;
     align-items: center;
-    
-   
 }
+
+.about-user-item:not(:last-of-type) {
+    margin-bottom: 31px;
+}
+
 .about-user-item {
     font-family: 'Montserrat';
     font-weight: 700;
@@ -191,20 +195,38 @@ img {
     padding-top: 20px;
 }
 
-
 .btn-subm {
     text-align: center;
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 13px;
+    font-size: 18px;
     text-transform: uppercase;
     background-color: #fed136;
     color: #fff;
-    padding: 27px 94px;
+    padding: 24px 46px;
     border: none;
     border-radius: 4px;
 }
 
 .btn-subm:hover {
     background-color: #ffd024;
+}
+
+.txt-message {
+    resize: none;
+    min-height: 227px
+}
+
+.about-user-item:focus:valid {
+    outline: 3px solid green;
+}
+.about-user-item:focus:invalid {
+    outline: 3px solid red;
+}
+
+.txt-massage:focus:valid {
+    outline: 3px solid green;
+}
+.txt-massage:focus:invalid {
+    outline: 3px solid red;
 }

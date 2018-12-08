@@ -47,15 +47,15 @@
             <form class="contact-form" action="#" method="post">
                 <ul class="user-enter">
                     <li class="about-user">
-                        <input class="about-user-item" type="text" size="50" name="a" id="id_input" required placeholder="Your name *">
-                        <input class="about-user-item" type="email" size="50" name="email" required placeholder="Your email *" d="">
-                        <input class="about-user-item" type="" size="50" name="email" placeholder="Subject" d="">
+                        <input class="about-user-item" type="text" size="50" name="name" id="id_input" required placeholder="Your name *" minlength="3" maxlength="28">
+                        <input class="about-user-item" type="email" size="50" name="email" required placeholder="Your email *">
+                        <input class="about-user-item" type="text" size="50" name="subject" placeholder="Subject"  minlength="3" maxlength="28">
                     </li>
                     <li>
-                    <textarea class="txt-massage" rows="12" cols="50" required placeholder="your message *" name="text"></textarea>
+                    <textarea class="txt-massage" rows="12" cols="50" required placeholder="your message *" name="text" minlength="3"></textarea>
                     </li>
                 </ul>
-                <button class="btn-subm" type="submit">submit</button>
+                <button class="btn-subm" type="submit">send message</button>
             </form>
             </div>
         </section>
