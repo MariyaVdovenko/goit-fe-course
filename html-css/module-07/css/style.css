@@ -136,14 +136,14 @@ img {
 }
 
 .contact-us {
-    min-height: 677px;
     background-color: #000;
     background-image: url(../img/map.png);
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom;
     color: #fff;
-    padding-top: 123px;
+    padding: 123px 0 117px;
+
 }
 
 .services {
@@ -206,10 +206,11 @@ img {
     padding: 24px 46px;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .btn-subm:hover {
-    background-color: #ffd024;
+    background-color: #b89000;
 }
 
 .txt-message {
