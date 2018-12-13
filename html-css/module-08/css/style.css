@@ -1,0 +1,178 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    width: 320px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+.hd {
+    min-height: 540px;
+    background-color: #000;
+    background-image: url(../img/img_mob/header-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    
+
+}
+
+.site-nav a {
+    display: block;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+}
+
+.logo {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.menu-list {
+    margin: 0 auto 120px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-item {
+    border: 3px solid rgba(255, 255, 255, 0.001);
+    border-radius: 25px;
+    font-size: 14px;
+    padding: 8.2px 20px;
+}
+
+.menu-item:hover {
+    border: 3px solid #fff;
+}
+
+.slogan {
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+}
+
+.slogan-discr {
+    color: #fff;
+    font-family: 'roboto';
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    padding: 0 25px 22px;
+}
+
+.btn-find {
+    background-color: #ff4e50;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10.85px 45px;
+    border-color: #ff4e50
+
+}
+
+.partneers {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 21px;
+}
+
+.partneers-list {
+margin: 0;
+padding: 0;
+}
+
+.partneers-list-item {
+    width: 280px;
+    margin-bottom: 31px;
+    text-align: center;
+    list-style: none;
+}
+
+.partneers-list-item::before {
+    display: block;
+    content: '';
+    width: 125px;
+    height: 125px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto 26px;
+}
+
+.icon-brh::before {
+    background-image: url(../img/img_mob/bradley-hunter.png);
+}
+
+.icon-lucas::before {
+    background-image: url(../img/img_mob/lucas-marsha.png);
+}
+.icon-heather::before {
+    background-image: url(../img/img_mob/heather-walker.png);
+}
+.icon-brh-2::before {
+    background-image: url(../img/img_mob/bradley-hunter2.png);
+}
+
+.full-name {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 auto 22px;
+}
+
+.about {
+    margin: 0;
+    font-family: 'roboto';
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.btn-see {
+    background-color: #fff;
+    color: #ff4e50;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10.85px 45px;
+    border-color: #ff4e50
+}
+
+.partneer-section {
+    padding-bottom: 60px;
+}

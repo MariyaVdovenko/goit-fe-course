@@ -215,7 +215,7 @@ img {
 
 .txt-message {
     resize: none;
-    min-height: 227px
+    min-height: 227px;
 }
 
 .about-user-item:focus:valid {
