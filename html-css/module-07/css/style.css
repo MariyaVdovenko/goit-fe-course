@@ -193,6 +193,8 @@ img {
     text-transform: uppercase;
     text-indent: 20px;
     padding-top: 20px;
+    resize: none;
+    min-height: 227px;
 }
 
 .btn-subm {
@@ -211,11 +213,6 @@ img {
 
 .btn-subm:hover {
     background-color: #b89000;
-}
-
-.txt-message {
-    resize: none;
-    min-height: 227px;
 }
 
 .about-user-item:focus:valid {

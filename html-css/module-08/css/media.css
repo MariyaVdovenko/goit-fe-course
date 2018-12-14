@@ -1,5 +1,80 @@
 @media (min-width: 748px) {
-    .menu-list {
-        margin-bottom: 0;
+    .wrapper {
+        width: 748px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
-} 
+    
+    .hd {
+        min-height: 700px;
+        background-image: url(../img/img_tablet/header-bg.png);
+    }
+
+    .site-nav {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-bottom: 150px;
+    }
+
+    .logo {
+        line-height: 50px;
+        margin: 0;
+    }
+
+    .menu-list {
+        margin: 0;
+    }
+
+    .partneers-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .partneers-list-item {
+        flex: 0 0 236px;
+    }
+
+    
+    .partneers--item:not(:nth-last-of-type(-n+2)) {
+        margin-bottlistom: 60px;
+    }
+
+    .slogan {
+        font-size: 48px;
+        padding: 0 100px;
+    }
+
+    .slogan-discr {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1020px) {
+    .wrapper {
+        width: 940px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .hd {
+        background-image: url(../img/img_desktop/header-bg.png);
+    }
+
+    .partneers-list {
+        display: flex;
+        flex-wrap: inherit;
+        justify-content: space-between;
+    }
+
+    .partneers-list-item {
+        flex: 0 0 220px;
+        
+    }
+
+    .slogan {
+        font-size: 52px;
+        padding: 0 150px;
+    }
+}
