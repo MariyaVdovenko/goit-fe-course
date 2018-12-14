@@ -124,6 +124,7 @@ padding: 0;
     margin-bottom: 31px;
     text-align: center;
     list-style: none;
+    padding: 10px;
 }
 
 .partneers-list-item::before {
@@ -134,6 +135,10 @@ padding: 0;
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto 26px;
+}
+
+.partneers-list-item:hover {
+    box-shadow:  0 0 10px rgba(0,0,0,0.5);
 }
 
 .icon-brh::before {
