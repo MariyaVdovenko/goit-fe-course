@@ -1,4 +1,4 @@
-@media (max-width:747px) {
+@media (max-width:767px) {
     .partners-list-item:not(:last-child) {
         margin-bottom: 25px;
     }
@@ -8,11 +8,10 @@
     }
 }
 
-@media (min-width: 748px) and (max-width: 1019px) {
+@media (min-width: 768px) and (max-width: 939px) {
     .wrapper {
         width: 748px;
-        padding-left: 40px;
-        padding-right: 40px;
+        
     }
 
     .hd {
@@ -36,6 +35,8 @@
     }
 
     .partners-list {
+        margin: 0 auto 30px;
+        max-width: 492px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -59,11 +60,10 @@
     }
 }
 
-@media (min-width: 1020px) {
+@media (min-width: 940px) {
     .wrapper {
-        width: 940px;
-        padding-left: 20px;
-        padding-right: 20px;
+        width: 910px;
+       
     }
 
     .site-nav {
@@ -84,6 +84,7 @@
 
 
     .partners-list {
+        margin-bottom: 30px;
         display: flex;
         flex-wrap: inherit;
         justify-content: space-between;
