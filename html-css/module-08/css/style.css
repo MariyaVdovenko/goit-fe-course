@@ -74,7 +74,6 @@ img {
     text-align: center;
     margin: 0;
     margin-bottom: 28px;
-
 }
 
 .slogan-discr {
@@ -84,7 +83,8 @@ img {
     font-size: 18px;
     text-align: center;
     margin: 0;
-    padding: 0 25px 22px;
+    padding: 0 25px;
+    margin-bottom: 22px;
 }
 
 .btn-find {
@@ -96,34 +96,31 @@ img {
     border-radius: 25px;
     display: block;
     margin: 0 auto;
-    padding: 10.85px 0; 
+    padding: 10.85px 0;
     border: 3px solid #ff4e50;
     text-align: center;
     text-decoration: none;
     width: 225px;
-
 }
 
-.partneers {
+.partners {
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 22px;
     text-align: center;
-    padding-top: 70px;
     margin: 0;
 }
 
-.partneers-list {
+.partners-list {
 margin: 0;
-padding: 0;
+padding: 20px 0;
+margin-bottom: 20px;
 }
 
-.partneers-list-item {
+.partners-list-item {
     width: 280px;
-    margin-bottom: 24px;
     text-align: center;
     list-style: none;
-    padding: 17px 10px 10px;
 }
 
 .partner-photo{
@@ -131,7 +128,6 @@ padding: 0;
     height: 123px;
     position: relative;
     margin: 0 auto 22px;
-
 }
 
 .round {
@@ -148,10 +144,9 @@ padding: 0;
     content: '';
     background-repeat: no-repeat;
     background-position: center;
-    
 }
 
-.partneers-list-item:hover {
+.partners-list-item:hover {
     box-shadow:  0 0 10px rgba(0,0,0,0.5);
 }
 
@@ -198,6 +193,7 @@ padding: 0;
     border-color: #ff4e50
 }
 
-.partneer-section {
+.partner-section {
+    padding-top: 70px;
     padding-bottom: 60px;
 }
