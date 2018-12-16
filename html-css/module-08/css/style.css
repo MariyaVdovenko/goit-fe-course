@@ -25,13 +25,10 @@ img {
 .hd {
     min-height: 540px;
     background-color: #000;
-    background-image: url(../img/img_mob/header-bg.png);
-    background-position: center;
+    background-image: url(../img/img_desktop/header-bg.png);
+    background-position: top;
     background-repeat: no-repeat;
     padding-top: 20px;
-    margin-bottom: 20px;
-    
-
 }
 
 .site-nav a {
@@ -98,10 +95,12 @@ img {
     font-size: 14px;
     border-radius: 25px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10.85px 45px;
-    border-color: #ff4e50
+    margin: 0 auto;
+    padding: 10.85px 0; 
+    border: 3px solid #ff4e50;
+    text-align: center;
+    text-decoration: none;
+    width: 225px;
 
 }
 
@@ -110,8 +109,8 @@ img {
     font-weight: 700;
     font-size: 22px;
     text-align: center;
+    padding-top: 70px;
     margin: 0;
-    padding-bottom: 21px;
 }
 
 .partneers-list {
@@ -121,38 +120,53 @@ padding: 0;
 
 .partneers-list-item {
     width: 280px;
-    margin-bottom: 31px;
+    margin-bottom: 24px;
     text-align: center;
     list-style: none;
-    padding: 10px;
+    padding: 17px 10px 10px;
 }
 
-.partneers-list-item::before {
+.partner-photo{
+    width: 123px;
+    height: 123px;
+    position: relative;
+    margin: 0 auto 22px;
+
+}
+
+.round {
+    border-radius: 61.5px;
+}
+
+.partner-photo::before {
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    width: 41px;
+    height: 41px;
     display: block;
     content: '';
-    width: 125px;
-    height: 125px;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 0 auto 26px;
+    
 }
 
 .partneers-list-item:hover {
     box-shadow:  0 0 10px rgba(0,0,0,0.5);
 }
 
-.icon-brh::before {
-    background-image: url(../img/img_mob/bradley-hunter.png);
+.icon-part-01::before {
+    background-image: url(../img/icon/part-01.png);
 }
 
-.icon-lucas::before {
-    background-image: url(../img/img_mob/lucas-marsha.png);
+.icon-part-02::before {
+    background-image: url(../img/icon/part-02.png);
 }
-.icon-heather::before {
-    background-image: url(../img/img_mob/heather-walker.png);
+.icon-part-03::before {
+    background-image: url(../img/icon/part-03.png);
 }
-.icon-brh-2::before {
-    background-image: url(../img/img_mob/bradley-hunter2.png);
+.icon-part-04::before {
+    background-image: url(../img/icon/part-04.png);
 }
 
 .full-name {

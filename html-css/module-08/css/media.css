@@ -7,7 +7,6 @@
     
     .hd {
         min-height: 700px;
-        background-image: url(../img/img_tablet/header-bg.png);
     }
 
     .site-nav {
@@ -56,10 +55,6 @@
         width: 940px;
         padding-left: 40px;
         padding-right: 40px;
-    }
-
-    .hd {
-        background-image: url(../img/img_desktop/header-bg.png);
     }
 
     .partneers-list {
