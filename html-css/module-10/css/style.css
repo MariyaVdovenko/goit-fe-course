@@ -254,7 +254,7 @@ img {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 380px;
             flex: 0 0 380px;
-    padding: 0 38px 0 85px;
+    padding: 0 38px 0 65px;
     text-align: center;
     position: relative;
 }
@@ -263,13 +263,34 @@ img {
     margin-bottom: 98px;
     }
 
-.services__icon svg{
-    fill: #95e1d3;
+.services__icon::before {
     position: absolute;
     left: 0;
     top: 0;
+    display: inline-block;
+    content: '';
     width: 40px;
     height: 40px;
+    background-size: contain;
+}
+
+.services__icon--alarm::before {
+    background-image: url(../img/icons/icon-alarm.svg);
+}
+.services__icon--line-graph::before {
+    background-image: url(../img/icons/icon-line-graph.svg);
+}
+.services__icon--computer::before {
+    background-image: url(../img/icons/icon-computer.svg);
+}
+.services__icon--book-2::before {
+    background-image: url(../img/icons/icon-book-2.svg);
+}
+.services__icon--home::before {
+    background-image: url(../img/icons/icon-home.svg);
+}
+.services__icon--image::before {
+    background-image: url(../img/icons/icon-image.svg);
 }
 
 /* team */
