@@ -39,10 +39,8 @@ img {
 
 .page-header {
     min-height: 1000px;
-    max-width: 1920px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 54px;
     background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(243, 129, 129, 0.8)), to(rgba(252, 227, 128, 0.8)) ),  url(../img/header.jpg);
     background-image: -webkit-linear-gradient( rgba(243, 129, 129, 0.8), rgba(252, 227, 128, 0.8) ),  url(../img/header.jpg);
     background-image: -o-linear-gradient( rgba(243, 129, 129, 0.8), rgba(252, 227, 128, 0.8) ),  url(../img/header.jpg);
@@ -67,6 +65,7 @@ img {
     -webkit-transition: color 200ms linear;
     -o-transition: color 200ms linear;
     transition: color 200ms linear;
+    margin-bottom: 130px;
 }
 
 .site-logo {
@@ -171,10 +170,15 @@ img {
     border: 3px solid #fce38a;
 }
 
+.site-slogan__txt {
+    margin: 0;
+}
+
 .site-slogan__first {
     font-family: 'Kaushan Script';
     font-weight: 400;
     font-size: 50px;
+    margin-bottom: 53px;
 }
 
 .site-slogan__second {
@@ -182,16 +186,14 @@ img {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 150px;
+    margin-bottom: 125px;
 }
 
 /* main */
 
-/* Это есть в практике,
-но я помню было замечание этот маржин убрать?!
-
-.section {
-    margin-bottom: 100px;
-} */
+.services {
+    padding-top: 54px;
+} 
 
 .section__list {
     display: -webkit-box;
@@ -252,15 +254,14 @@ img {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 380px;
             flex: 0 0 380px;
-    margin-bottom: 100px;
     padding: 0 38px 0 85px;
     text-align: center;
     position: relative;
 }
 
-.services__item:nth-of-type(n+3) {
-    margin-bottom: 0;
-}
+.services__item:not(:nth-last-child(-n + 3)){
+    margin-bottom: 98px;
+    }
 
 .services__icon svg{
     fill: #95e1d3;
@@ -367,7 +368,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 230px;
+    width: 231px;
 }
 
 .social svg {
@@ -421,6 +422,7 @@ img {
 
 .page-footer {
     min-height: 65px;
+
 }
 
 .page-footer .container{
