@@ -1,0 +1,28 @@
+.account {
+   
+}
+
+a.account__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.account__link {
+    --h: 36px;
+    --bdw: 2px;
+    height: var(--h);
+    line-height: calc(var(--h) - 2 * var(--bdw));
+    display: inline-block;
+    padding: 0 17px;
+    border: var(--bdw) solid transparent;
+    border-radius: calc(var(--h) / 2);
+    font-family: 'montserrat';
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 1px;
+}
+
+.account__link:hover {
+    border: 2px solid #fff;
+}

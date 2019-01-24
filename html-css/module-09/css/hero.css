@@ -1,0 +1,21 @@
+.hero {
+    min-height: 540px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/img_desktop/header-bg320.jpg);
+}
+
+@media (min-width: 480px) {
+    .hero {
+        background-image: url(../img/img_desktop/header-bg768.jpg);
+        min-height: 700px;
+    }
+}
+
+@media (min-width: 769px) {
+    .hero {
+        background-image: url(../img/img_desktop/header-bg.jpg);
+        min-height: 700px;
+    }
+}

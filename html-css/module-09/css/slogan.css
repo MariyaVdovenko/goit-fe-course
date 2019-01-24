@@ -1,0 +1,26 @@
+.slogan {
+    color: #fff;
+}
+.slogan__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 17px;
+}
+
+.slogan__subtitle {
+    font-weight: 300;
+    font-size: 18px;
+    font-family: 'roboto';
+    margin-bottom: 17px;
+}
+
+@media (min-width: 769px) {
+    .slogan__title {
+        font-size: 52px;
+    }
+
+    .slogan__subtitle {
+        font-size: 24px;
+    }
+}
