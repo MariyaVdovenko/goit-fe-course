@@ -1,3 +1,18 @@
+.partners {
+  padding: 60px 20px 60px;
+}
+
+.partners__title {
+  font-weight: bold;
+  font-family: "Montserrat";
+  font-size: 22px;
+  padding: 5px 0;
+}
+
+.partner {
+    margin-bottom: 10px;
+}
+
 .partners__title {
     color: #333333;
     font-family: 'Montserrat';
@@ -18,7 +33,7 @@
 .partner__img {
     border-radius: 50%;
 }
-.partner__icon-wrp {
+.icon {
     --s: 40px;
     height: var(--s);
     width: var(--s);
@@ -27,26 +42,25 @@
     right: -4px;
     border-radius: 50%;
     border: 2px solid #fff;
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
-.p01 {
+.icon-01 {
     background-color: #ff4e50;
+    background-image: url("../img/icon/part-01.png");
 }
-.p02 {
+.icon-02 {
     background-color: #ffa507;
+    background-image: url("../img/icon/part-02.png");
 }
-.p03 {
+.icon-03 {
     background-color: #1cd7ad;
+    background-image: url("../img/icon/part-03.png");
 }
-.p04 {
+.icon-04 {
     background-color: #4e73db;
-}
-
-.partner__icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background-image: url("../img/icon/part-04.png");
 }
 
 .partner__name {
@@ -56,7 +70,9 @@
     font-weight: 700;
     font-size: 14px;
     text-align: center;
-    margin-top: 23px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 0 4px;
 }
 
 .partner__about {
@@ -67,22 +83,25 @@
     font-size: 14px;
     line-height: 1.2;
     text-align: center;
-    margin: 0;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-    .partner {
-        margin-bottom: 25px;
-    }
+    margin-left: auto;
+    margin-right: auto;
 }
 
-@media (min-width: 768px) and (max-width: 939px) {
-    .partner:not(:nth-last-child(-n+3)) {
-        margin-bottom: 25px;
-    }
+
+
+@media (min-width: 960px) {
+  .partners {
+    width: 960px;
+    pading: 60px 0 60px;
+  }
 }
 
-@media (min-width: 940px) {
-    .partner:not(:nth-last-child(-n+4)) {
-        margin-bottom: 0;
-    }
+
+@media (min-width: 768px) {
+  .partner:first-of-type {
+    margin-right: 16px;
+  }
+  .partner:last-of-type {
+    margin-left: 16px;
+  }
 }

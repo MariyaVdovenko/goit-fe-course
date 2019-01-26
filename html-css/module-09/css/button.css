@@ -30,11 +30,15 @@
     color: #ff4e50;
     background-color: #fff;
     border: var(--bdw) solid #ff4e50;
-    margin-top: 30px;
-    margin-bottom: 58px;
 }
 .btn__light:hover {
     background-color: #ff4e50;
     color: #fff;
     border: var(--bdw) solid #c0292c;;
 }
+
+@media (min-width: 768px ) {
+  .btn {
+      --w: 228px;
+  }
+  }

@@ -1,27 +1,10 @@
 .logo {
-    color: #fff;
+    font-size: 20px;
+    line-height: 1;
+    font-family: 'Montserrat';
 }
 
 a.logo__link {
     text-decoration: none;
     color: #fff;
-
-}
-
-@media (max-width: 767px) {
-    .logo {
-        margin-top: 90px;
-        margin-bottom: 25px;
-    }
-}
-@media (min-width:768px) and (max-width: 942px) {
-    .logo {
-        margin-top: 0;
-        margin-bottom: 160px;
-    }
-}
-@media (min-width:943px) {
-    .logo {
-        margin-bottom: 165px;
-    }
 }
