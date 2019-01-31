@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../img/img_desktop/header-bg320.jpg);
+    padding-top: 25px;
 }
 
 .hero__content {
