@@ -1,4 +1,26 @@
 /*
    Import partials below
 */
+@import './halpers/var';
 @import './normalize';
+@import './halpers/base';
+
+/* Components */
+
+@import './components/link';
+@import './components/list';
+@import './components/container';
+@import './components/page-header';
+@import './components/page-nav';
+@import './components/site-logo';
+@import './components/site-navigation';
+@import './components/site-slogan';
+@import './components/section';
+@import './components/services';
+@import './components/team';
+@import './components/overlay';
+@import './components/social';
+@import './components/page-footer';
+@import './components/autor';
+@import './components/btn';
+@import './components/form';

@@ -1,0 +1,64 @@
+.services {
+    padding-top: 54px;
+} 
+
+.services__item {
+    flex: 0 0 380px;
+    padding: 0 38px 0 65px;
+    text-align: center;
+    position: relative;
+
+    &:not(:nth-last-child(-n + 3)){
+    margin-bottom: 98px;
+    }
+
+    &-text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        text-align: left;
+        color: $secondary-color;
+        margin: 0;
+    }
+
+    &-title {
+    font-family: $main-font-stack;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #333;
+    margin: 0;
+    }
+}
+
+.services__icon{
+&::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+}
+
+&--alarm::before {
+    background-image: url(../images/icons/icon-alarm.svg);
+}
+&--line-graph::before {
+    background-image: url(../images/icons/icon-line-graph.svg);
+}
+&--computer::before {
+    background-image: url(../images/icons/icon-computer.svg);
+}
+&--book-2::before {
+    background-image: url(../images/icons/icon-book-2.svg);
+}
+&--home::before {
+    background-image: url(../images/icons/icon-home.svg);
+}
+&--image::before {
+    background-image: url(../images/icons/icon-image.svg);
+}}

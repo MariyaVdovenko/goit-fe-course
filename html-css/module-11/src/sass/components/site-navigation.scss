@@ -1,0 +1,45 @@
+.site-navigation {
+    font-weight: 500;
+    font-size: 19px;
+    text-transform: uppercase;
+    display: flex;
+    width: 621px;
+    justify-content: space-between;
+}
+
+.site-navigation__link {
+    color: $main-white-color;
+    
+    &:hover,&:focus{
+    color: $main-hover-color;
+    }
+    &:hover svg, &:focus svg{
+    fill: $main-hover-color;
+    }
+    &::after {
+        content: "";
+        height: 4px;
+        transform: scaleX(0);
+        background-color: $main-hover-color;
+        display: block;
+        transition: transform 200ms linear;
+        margin-top: 15px;
+    }
+    &:hover::after,
+    &:focus::after {
+        transform: scaleX(1);
+    }
+}
+    
+.site-navigation__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-navigation__icon svg {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    fill: $main-white-color;
+}

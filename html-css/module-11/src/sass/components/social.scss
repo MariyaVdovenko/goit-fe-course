@@ -1,0 +1,30 @@
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 231px;
+}
+
+.social svg {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    fill: #f38181;
+}
+
+.social__link {
+    width: 57px;
+    height: 57px;
+    background-color: #fce38a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 200ms linear;
+}
+
+.social__link:hover {
+    background-color: #f38181;
+}
+.social__link:hover svg {
+    fill: $main-white-color;
+}

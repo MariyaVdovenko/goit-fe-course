@@ -1,0 +1,33 @@
+.team {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.team__item-name {
+    font-family: $main-font-stack;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #333;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.team__item-position {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+    color: $secondary-color;
+    margin: 0;
+}
+
+.team__item-photo {
+    margin: 0 0 30px;
+}
+
+.team__item {
+    position: relative;
+}

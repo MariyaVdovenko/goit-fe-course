@@ -1,0 +1,9 @@
+.site-logo {
+    color: $main-white-color;
+    font-family: $main-font-stack;
+    font-weight: 700;
+    font-size: 40px;
+    &:hover {
+    color: $main-hover-color;
+}
+}

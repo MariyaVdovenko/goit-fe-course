@@ -1,0 +1,41 @@
+.site-slogan {
+    text-align: center;
+    color: $main-white-color;
+    width: 821px;
+    margin: 0 auto;
+}
+
+.site-slogan__link {
+    color: $main-white-color;
+    font-family: $main-font-stack;
+    font-weight: 700;
+    font-size: 14px;
+    border:3px solid $main-white-color;
+    width: 182px;
+    margin: 0 auto;
+    padding: 10.05px 0;
+    
+    &:hover {
+    color: $main-hover-color;
+    border: 3px solid $main-hover-color;
+    }
+}
+
+.site-slogan__txt {
+    margin: 0;
+}
+
+.site-slogan__first {
+    font-family: 'Kaushan Script';
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 53px;
+}
+
+.site-slogan__second {
+    font-family: $main-font-stack;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 150px;
+    margin-bottom: 125px;
+}

@@ -1,0 +1,12 @@
+.page-footer {
+    min-height: 65px;
+
+}
+
+.page-footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid $secondary-color;
+    padding-top: 10px;
+}

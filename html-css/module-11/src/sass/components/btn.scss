@@ -1,0 +1,15 @@
+.btn {
+    font-family: $main-font-stack;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #95e1d3;
+    color: #f9fdfc;
+    padding: 15px 38px;
+    transition: background-color 200ms linear;
+    border: none;
+    
+    &:hover {
+    background-color: #f38181;
+}}

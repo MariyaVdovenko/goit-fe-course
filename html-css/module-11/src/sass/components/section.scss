@@ -1,0 +1,41 @@
+.section__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.section__first-name{
+    margin: 0 0 25px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    text-align: center;
+}
+
+.section__second-name {
+    margin: 0 auto 40px;
+    font-family: $main-font-stack;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section__second-name::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+    margin: 40px auto 0;
+}
+
+.section__descr {
+    width: 960px;
+    display: block;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0 auto 94px;
+    color: $secondary-color;
+}

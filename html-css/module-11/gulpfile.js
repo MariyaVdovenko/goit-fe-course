@@ -69,15 +69,15 @@ gulp.task('scripts', () => {
 
 gulp.task('sprite', () => {
   return gulp
-    .src('./src/images/icons/icon-*.svg')
+    .src('./src/images/sprite/icon-*.svg')
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('./build/images'));
+    .pipe(gulp.dest('./build/images/icons'));
 });
 
 gulp.task('images', () => {
   return gulp
-    .src(['./src/images/**/*.{png,jpg,jpeg,svg}', '!./src/images/icons/**/*'])
+    .src(['./src/images/**/*.{png,jpg,jpeg,svg}', '!./src/images/sprite/**/*'])
     .pipe(
       imagemin([
         imagemin.jpegtran({ progressive: true }),
@@ -96,6 +96,7 @@ gulp.task('fonts', () => {
 
 gulp.task('watch', () => {
   gulp.watch('src/**/*.html', ['html']).on('change', server.reload);
+  gulp.watch('gulpfile.js', ['build']).on('change', server.reload);
   gulp.watch('src/sass/**/*.scss', ['styles']);
   gulp.watch('src/js/**/*.js', ['scripts']).on('change', server.reload);
 });
